@@ -16,54 +16,57 @@
         body {
             width: 100vw;
             height: 100vh;
-            background-color: #0c101d;
+            /* Background adii fi magariisa (Gradient) */
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #f8fafc 100%);
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
         }
 
-        /* Iddoo walitti qabamiinsa suuraa fi barruulee */
+        /* Iddoo suuraa (Container) */
         .wrapper {
             position: relative;
             width: 100%;
-            max-width: 480px;
+            max-width: 440px;
             height: 100%;
             max-height: 95vh;
             background: url('my.jpg') no-repeat center center;
             background-size: contain;
+            display: flex;
+            justify-content: center;
         }
 
-        /* Design barruu fi mata duree (Branding / Overlay) */
+        /* Design barruu fi mata duree (Magariisa fi Adii) */
         .brand-overlay {
             position: absolute;
-            top: 4%;
+            top: 3%;
             left: 50%;
             transform: translateX(-50%);
             width: 90%;
             text-align: center;
-            background: rgba(15, 23, 42, 0.65);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 16px;
-            padding: 12px 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(22, 163, 74, 0.2);
+            border-radius: 14px;
+            padding: 10px 15px;
+            box-shadow: 0 10px 25px rgba(22, 163, 74, 0.15);
         }
 
         .brand-overlay h1 {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 700;
-            color: #fbbf24;
-            letter-spacing: 1.5px;
-            margin-bottom: 3px;
+            color: #15803d; /* Magariisa miidhagaa */
+            letter-spacing: 1px;
+            margin-bottom: 2px;
             text-transform: uppercase;
         }
 
         .brand-overlay p {
-            font-size: 0.85rem;
-            color: #e2e8f0;
-            font-weight: 500;
+            font-size: 0.8rem;
+            color: #334155;
+            font-weight: 600;
         }
 
         /* Hotspots: Iconoota suuraa irra jiran clickable gochuuf */
@@ -75,12 +78,12 @@
         }
 
         .social-link:hover {
-            background-color: rgba(251, 191, 36, 0.25);
-            box-shadow: 0 0 15px rgba(251, 191, 36, 0.8);
-            border: 1px solid rgba(251, 191, 36, 0.6);
+            background-color: rgba(22, 163, 74, 0.25);
+            box-shadow: 0 0 15px rgba(22, 163, 74, 0.8);
+            border: 1px solid #16a34a;
         }
 
-        /* Safartoota iconootaa (Hotspots coordinates suuraa sana irratti) */
+        /* Safartoota iconootaa (Coordinates suuraa sana irratti) */
         .fb { top: 25%; left: 33%; width: 9%; height: 9%; }
         .ig { top: 26%; left: 42%; width: 9%; height: 9%; }
         .twitter { top: 35%; left: 29%; width: 9%; height: 9%; }
@@ -101,7 +104,7 @@
 <body>
 
     <div class="wrapper">
-        <!-- Mata duree fi maqaa kee isa bifa ammayyaatiin suuraarratti dabalame -->
+        <!-- Mata duree fi maqaa bifa adii fi magariisaan -->
         <div class="brand-overlay">
             <h1>Qaroo Digital Agency</h1>
             <p>Lemma Asefa &bull; Digital Creator</p>
